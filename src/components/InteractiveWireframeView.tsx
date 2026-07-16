@@ -5,7 +5,8 @@ import {
   Clock, Calendar, MapPin, Users, CheckCircle2, ArrowRight, 
   ChevronRight, Info, Sparkles, ShieldCheck, 
   Bookmark, BookmarkCheck, UserCheck, X, Mail, Phone, Map, 
-  ChevronLeft, Send, ZoomIn, ZoomOut, Compass, InfoIcon, Menu
+  ChevronLeft, Send, ZoomIn, ZoomOut, Compass, InfoIcon, Menu,
+  Linkedin, Globe
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -47,6 +48,409 @@ const CustomAvatar = ({ name, size = 'md' }: { name: string; size?: 'sm' | 'md' 
   return (
     <div className={`rounded-full border border-amber-500/20 bg-gray-950 text-amber-500 flex items-center justify-center tracking-tight font-mono shadow-inner flex-shrink-0 ${sizeClasses[size]}`}>
       {initials}
+    </div>
+  );
+};
+
+// Reusable Summit Partners Showcase Grid component
+const SummitPartnersShowcase = () => {
+  return (
+    <div className="border border-gray-800 rounded-2xl bg-gray-950 p-8 lg:p-12 space-y-10 shadow-2xl relative overflow-hidden" id="partners-showcase-container">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.03),transparent_60%)] pointer-events-none" />
+      
+      <div className="space-y-3 text-center relative z-10 max-w-2xl mx-auto">
+        <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-amber-500 bg-amber-500/10 px-3 py-1 rounded border border-amber-500/20">
+          Summit Alignments &amp; Alliances
+        </span>
+        <h3 className="text-xl md:text-2xl font-bold font-display text-white tracking-tight">The Alliance Guild</h3>
+        <p className="text-xs text-gray-400 font-medium">
+          Representing elite capital structures, leading cross-border legal trusts, and premier transactional architects.
+        </p>
+      </div>
+
+      <div className="space-y-8 relative z-10">
+        <div className="space-y-3">
+          <div className="flex items-center gap-4">
+            <span className="text-[8px] font-mono font-bold text-gray-500 uppercase tracking-widest whitespace-nowrap">PRESENTING PARTNER</span>
+            <div className="h-[1px] bg-gray-800 flex-1" />
+          </div>
+          <div className="flex justify-center">
+            <div className="w-full max-w-sm bg-gray-900/60 border border-gray-800 rounded-xl p-6 hover:border-amber-500/30 hover:bg-gray-900 transition-all text-center flex flex-col items-center justify-center gap-1.5 shadow-md">
+              <span className="font-extrabold text-amber-500 font-sans tracking-widest text-base uppercase">SOVEREIGN WEALTH ASSOCIATION</span>
+              <span className="text-[9px] font-mono text-gray-500 uppercase font-semibold">Global Generational Capital Trust</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <div className="flex items-center gap-4">
+            <span className="text-[8px] font-mono font-bold text-gray-500 uppercase tracking-widest whitespace-nowrap">DIAMOND PARTNERS</span>
+            <div className="h-[1px] bg-gray-800 flex-1" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-gray-900/60 border border-gray-800 rounded-xl p-5 hover:border-amber-500/30 hover:bg-gray-900 transition-all text-center flex flex-col items-center justify-center gap-1 shadow-md">
+              <span className="font-bold text-white tracking-wider text-sm uppercase">VANCE PRIVATE ADVISORS</span>
+              <span className="text-[8px] font-mono text-gray-500 uppercase font-semibold">Asset Protection &amp; Capital Allocation</span>
+            </div>
+            <div className="bg-gray-900/60 border border-gray-800 rounded-xl p-5 hover:border-amber-500/30 hover:bg-gray-900 transition-all text-center flex flex-col items-center justify-center gap-1 shadow-md">
+              <span className="font-bold text-white tracking-wider text-sm uppercase">HORIZON VENTURES TRUST</span>
+              <span className="text-[8px] font-mono text-gray-500 uppercase font-semibold">Secondary Market Liquidity Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <div className="flex items-center gap-4">
+            <span className="text-[8px] font-mono font-bold text-gray-500 uppercase tracking-widest whitespace-nowrap">GOLD PARTNERS</span>
+            <div className="h-[1px] bg-gray-800 flex-1" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="bg-gray-900/60 border border-gray-800 rounded-xl p-4 hover:border-amber-500/30 hover:bg-gray-900 transition-all text-center flex flex-col justify-center gap-0.5 shadow-sm">
+              <span className="font-bold text-gray-300 tracking-wide text-xs uppercase">CROWN TRUSTS</span>
+              <span className="text-[8px] font-mono text-gray-600 uppercase">Legacy Protection</span>
+            </div>
+            <div className="bg-gray-900/60 border border-gray-800 rounded-xl p-4 hover:border-amber-500/30 hover:bg-gray-900 transition-all text-center flex flex-col justify-center gap-0.5 shadow-sm">
+              <span className="font-bold text-gray-300 tracking-wide text-xs uppercase">MEADOWOOD CHAMBERS</span>
+              <span className="text-[8px] font-mono text-gray-600 uppercase">Secured Estates</span>
+            </div>
+            <div className="bg-gray-900/60 border border-gray-800 rounded-xl p-4 hover:border-amber-500/30 hover:bg-gray-900 transition-all text-center flex flex-col justify-center gap-0.5 shadow-sm">
+              <span className="font-bold text-gray-300 tracking-wide text-xs uppercase">SOCIETE JURIDIQUE</span>
+              <span className="text-[8px] font-mono text-gray-600 uppercase">Cross-Border Tax</span>
+            </div>
+            <div className="bg-gray-900/60 border border-gray-800 rounded-xl p-4 hover:border-amber-500/30 hover:bg-gray-900 transition-all text-center flex flex-col justify-center gap-0.5 shadow-sm">
+              <span className="font-bold text-gray-300 tracking-wide text-xs uppercase">NEXA GLOBAL M&amp;A</span>
+              <span className="text-[8px] font-mono text-gray-600 uppercase">Transaction Architects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Animated India Connectivity Network Component
+const IndiaConnectivityGlobe = () => {
+  const cities = [
+    { name: 'Delhi', x: 210, y: 140, tag: 'NCT State Corridor', info: 'Capital Pool Access' },
+    { name: 'Mumbai', x: 130, y: 350, tag: 'Financial Hub Sector', info: 'Liquidity Pipelines' },
+    { name: 'Bengaluru', x: 215, y: 480, tag: 'Tech Enterprise Cluster', info: 'Founder Foundations' },
+    { name: 'Pune', x: 145, y: 375, tag: 'Industrial Corridor', info: 'Family Offices' },
+    { name: 'Hyderabad', x: 235, y: 400, tag: 'Enterprise Cloud Core', info: 'Primary Asset Base' },
+    { name: 'Chennai', x: 250, y: 490, tag: 'Maritime Export Gate', info: 'Sovereign Alliances' },
+    { name: 'Kolkata', x: 390, y: 280, tag: 'Heritage Owner Base', info: 'Legacy Consolidations' }
+  ];
+
+  const connections = [
+    { from: 'Mumbai', to: 'Delhi' },
+    { from: 'Delhi', to: 'Bengaluru' },
+    { from: 'Bengaluru', to: 'Pune' },
+    { from: 'Hyderabad', to: 'Mumbai' },
+    { from: 'Delhi', to: 'Kolkata' },
+    { from: 'Mumbai', to: 'Bengaluru' },
+    { from: 'Chennai', to: 'Hyderabad' }
+  ];
+
+  const getCityCoords = (name: string) => {
+    const city = cities.find(c => c.name === name);
+    return city ? { x: city.x, y: city.y } : { x: 0, y: 0 };
+  };
+
+  return (
+    <div className="border border-gray-800 rounded-2xl bg-gray-950 p-8 lg:p-12 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row gap-12 items-center" id="india-connectivity-globe-container">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.03),transparent_70%)] pointer-events-none" />
+
+      <div className="lg:w-5/12 space-y-6 relative z-10 text-left">
+        <span className="inline-block text-[9px] font-mono uppercase text-amber-500 border border-amber-500/20 px-3.5 py-1.5 rounded bg-amber-500/5 tracking-widest font-bold">
+          • MULTI-CITY CONTINUOUS ALIGNMENT
+        </span>
+        <h3 className="text-2xl lg:text-3xl font-bold font-display text-white tracking-tight leading-tight">
+          The Animated India Connectivity Network
+        </h3>
+        <p className="text-gray-400 text-xs leading-relaxed font-sans font-medium">
+          Our exclusive footprint spans the country&apos;s leading capital markets and industrial corridors. Continuous transactions and confidential liquidity networks bind India&apos;s primary legacy founders in a single, resilient operational loop.
+        </p>
+
+        <div className="border-t border-gray-800 pt-6 space-y-4">
+          <div className="text-[10px] font-mono font-bold text-gray-500 uppercase tracking-widest">Active Corridors:</div>
+          <div className="grid grid-cols-2 gap-3">
+            {cities.slice(0, 4).map(c => (
+              <div key={c.name} className="flex items-center gap-2 bg-gray-900/40 border border-gray-800 p-2.5 rounded-lg">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
+                <div>
+                  <span className="block text-xs font-bold text-white leading-none">{c.name}</span>
+                  <span className="text-[9px] text-gray-500 font-mono font-semibold">{c.tag}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="lg:w-7/12 w-full flex justify-center relative z-10">
+        <div className="relative w-full max-w-[460px] aspect-[460/540] bg-gray-900/30 border border-gray-800/60 rounded-xl p-4 overflow-hidden shadow-inner flex items-center justify-center">
+          <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20" viewBox="0 0 460 540">
+            <defs>
+              <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#374151" strokeWidth="0.5" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+          </svg>
+
+          <svg className="w-full h-full relative z-10" viewBox="0 0 460 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {connections.map((conn, idx) => {
+              const start = getCityCoords(conn.from);
+              const end = getCityCoords(conn.to);
+              const dx = end.x - start.x;
+              const dy = end.y - start.y;
+              const dr = Math.sqrt(dx * dx + dy * dy) * 1.1;
+
+              return (
+                <g key={idx}>
+                  <path
+                    d={`M ${start.x} ${start.y} A ${dr} ${dr} 0 0 1 ${end.x} ${end.y}`}
+                    stroke="#1f2937"
+                    strokeWidth="1.5"
+                    fill="none"
+                  />
+                  <motion.path
+                    d={`M ${start.x} ${start.y} A ${dr} ${dr} 0 0 1 ${end.x} ${end.y}`}
+                    stroke="url(#arcGradient)"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    fill="none"
+                    initial={{ pathLength: 0, opacity: 0.1 }}
+                    animate={{ 
+                      pathLength: [0, 1, 1],
+                      pathOffset: [0, 0, 1],
+                      opacity: [0, 1, 0]
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      delay: idx * 0.7,
+                      ease: "easeInOut"
+                    }}
+                  />
+                </g>
+              );
+            })}
+
+            <defs>
+              <linearGradient id="arcGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#d97706" stopOpacity="0" />
+                <stop offset="50%" stopColor="#fbbf24" stopOpacity="1" />
+                <stop offset="100%" stopColor="#d97706" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+
+            {cities.map((city) => (
+              <g key={city.name} className="cursor-pointer group">
+                <circle
+                  cx={city.x}
+                  cy={city.y}
+                  r="10"
+                  fill="transparent"
+                  stroke="#d97706"
+                  strokeWidth="1"
+                  className="animate-ping opacity-25"
+                  style={{ transformOrigin: `${city.x}px ${city.y}px`, animationDuration: '3s' }}
+                />
+                
+                <circle
+                  cx={city.x}
+                  cy={city.y}
+                  r="6"
+                  fill="#111827"
+                  stroke="#fbbf24"
+                  strokeWidth="1.5"
+                  className="group-hover:fill-amber-600 transition-colors"
+                />
+
+                <circle
+                  cx={city.x}
+                  cy={city.y}
+                  r="2.5"
+                  fill="#fbbf24"
+                />
+
+                <text
+                  x={city.x}
+                  y={city.y - 12}
+                  textAnchor="middle"
+                  fill="#f3f4f6"
+                  fontSize="9.5"
+                  fontWeight="bold"
+                  fontFamily="monospace"
+                  className="tracking-wider select-none pointer-events-none font-bold"
+                >
+                  {city.name.toUpperCase()}
+                </text>
+
+                <title>{`${city.name}: ${city.info} (${city.tag})`}</title>
+              </g>
+            ))}
+          </svg>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Magazine & Media Collage Component
+const MagazineMediaCollage = () => {
+  const covers = [
+    {
+      title: "THE SOVEREIGN EXIT",
+      subtitle: "Napa Valley Special Edition",
+      issue: "ISSUE IV // VOL XII",
+      bgClass: "bg-zinc-950 text-white border-zinc-800",
+      accentText: "text-amber-500",
+      desc: "An exhaustive lookbook chronicling our continuous scale-ups and high-EBITDA liquidity architecture frameworks."
+    },
+    {
+      title: "THE CHATHAM RECORDERS",
+      subtitle: "De-Risking Legacy Assets",
+      issue: "FALL 2026 INDEX",
+      bgClass: "bg-white text-zinc-900 border-zinc-200",
+      accentText: "text-zinc-500",
+      desc: "Strategic insights dissecting macro multi-generational succession patterns bypassive of public markets."
+    },
+    {
+      title: "SUMMIT INSIGHTS",
+      subtitle: "Chatham House Dispatch",
+      issue: "VOL XIV // NO. 3",
+      bgClass: "bg-zinc-100 text-zinc-950 border-zinc-300",
+      accentText: "text-amber-700",
+      desc: "A highly classified report on outbound private credit leverage structures and competitive boardroom negotiations."
+    }
+  ];
+
+  return (
+    <div className="space-y-10" id="magazine-collage-main-container">
+      <div className="text-center space-y-3 max-w-2xl mx-auto">
+        <span className="text-[10px] font-bold text-amber-700 tracking-widest uppercase font-mono block">
+          PRINT &amp; EDITORIAL ARCHIVES
+        </span>
+        <h2 className="text-3xl font-black text-gray-900 font-display tracking-tight">
+          Magazine &amp; Media Presence
+        </h2>
+        <p className="text-xs text-gray-500 font-medium">
+          Simulating high-fidelity physical lookbooks, legacy reports, and editorial dispatches from our restricted publication press.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4">
+        {covers.map((cov, idx) => (
+          <div
+            key={idx}
+            className={`border rounded-xl p-8 flex flex-col justify-between aspect-[3/4] shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 relative overflow-hidden ${cov.bgClass}`}
+            id={`magazine-cover-${idx}`}
+          >
+            <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
+            
+            <div className="space-y-2 text-left">
+              <span className="text-[9px] font-mono tracking-widest uppercase block opacity-60 font-bold">{cov.issue}</span>
+              <div className="h-[1px] bg-amber-500/20 w-12 my-2" />
+              <h3 className="text-2xl font-black font-display tracking-tight leading-none mt-4 font-serif">
+                {cov.title}
+              </h3>
+              <p className={`text-[10px] font-mono uppercase tracking-widest font-semibold ${cov.accentText}`}>
+                {cov.subtitle}
+              </p>
+            </div>
+
+            <div className="space-y-4 text-left">
+              <p className="text-xs leading-relaxed opacity-80 font-medium">
+                {cov.desc}
+              </p>
+              <div className="border-t border-current/10 pt-4 flex items-center justify-between">
+                <span className="text-[9px] font-mono uppercase tracking-widest font-bold">RESTRICTED PRINT // COHORT ONLY</span>
+                <span className="text-xs font-bold font-serif">→</span>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+// Strategic Vision Frameworks Component
+const StrategicVisionFrameworks = () => {
+  const frameworks = [
+    {
+      num: "01",
+      title: "Systemic Asset De-Risking Strategy",
+      subtitle: "Confidential Transition of Illiquid Holdings",
+      desc: "Standard public offerings expose operations to hostile competitor actions and public scrutiny. We structure advanced direct-to-family-office transfers that lock in premium valuation multiples under strict reciprocal NDAs.",
+      bullets: [
+        "Advanced family-trust shielding systems.",
+        "Programmatic exit negotiations bypassive of intermediaries.",
+        "Tax-advantaged succession structures."
+      ]
+    },
+    {
+      num: "02",
+      title: "Board Sovereignty & Autonomy Protocols",
+      subtitle: "Bypassing Invasive Sponsor Covenants",
+      desc: "Capital syndications often come with dilutive board covenants that paralyze the founder's long-term scale. We align operators with non-restrictive sovereign credit networks to preserve complete operating autonomy.",
+      bullets: [
+        "Non-restrictive growth debt configurations.",
+        "Generational leadership preservation frameworks.",
+        "Structured board-vetoing rights templates."
+      ]
+    },
+    {
+      num: "03",
+      title: "Cross-Border Transactional Security",
+      subtitle: "Mitigating Geopolitical Asset Vulnerabilities",
+      desc: "Global industrial conglomerates must shield cash flows across volatile jurisdictions. We construct sovereign multi-city banking structures that insulate portfolio holdings from localized regulatory adjustments.",
+      bullets: [
+        "Bespoke helipad transport logistically aligned.",
+        "Offshore currency stability hedges.",
+        "Confidential capital routing indexes."
+      ]
+    }
+  ];
+
+  return (
+    <div className="space-y-12" id="vision-strategic-frameworks">
+      <div className="text-left space-y-3">
+        <span className="text-[10px] font-mono font-bold text-amber-700 tracking-widest uppercase block">[STRATEGIC VISION FRAMEWORKS]</span>
+        <h2 className="text-2xl md:text-3xl font-black text-gray-900 font-display tracking-tight leading-none">
+          Multilevel Architectural Mandates
+        </h2>
+        <p className="text-xs text-gray-500 leading-relaxed max-w-xl">
+          Deep-dive tactical structures replacing standard trade slide-decks with highly execution-ready blueprints.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-4">
+        {frameworks.map((fw) => (
+          <div key={fw.num} className="bg-gray-50/50 border border-gray-150 rounded-xl p-8 space-y-6 flex flex-col justify-between text-left" id={`framework-card-${fw.num}`}>
+            <div className="space-y-4">
+              <span className="w-10 h-10 rounded-md bg-gray-950 text-white flex items-center justify-center font-black text-xs font-mono shadow-md">{fw.num}</span>
+              <div>
+                <h3 className="font-extrabold text-gray-900 text-base tracking-tight leading-snug">{fw.title}</h3>
+                <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-amber-700 mt-1 block">{fw.subtitle}</span>
+              </div>
+              <p className="text-xs text-gray-600 leading-relaxed font-medium">
+                {fw.desc}
+              </p>
+            </div>
+
+            <ul className="space-y-2 border-t border-gray-200/60 pt-4 text-xs font-sans text-gray-700 font-semibold">
+              {fw.bullets.map((b, bIdx) => (
+                <li key={bIdx} className="flex items-center gap-2">
+                  <CheckCircle2 className="h-3.5 w-3.5 text-amber-600 flex-shrink-0" />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
@@ -117,6 +521,8 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
   };
 
   // Unified Secure Contact / Inquiry Form State
+  const [inquiryTab, setInquiryTab] = useState<'sponsorship' | 'advertising' | 'speakers'>('sponsorship');
+  const [toastMessage, setToastMessage] = useState<string>('Your strategic inquiry has been authenticated.');
   const [inquirySubmitted, setInquirySubmitted] = useState<boolean>(false);
   const [inquiryForm, setInquiryForm] = useState({
     fullName: '',
@@ -131,6 +537,15 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
   const handleInquirySubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setInquirySubmitted(true);
+    let msg = 'Your registration credentials have been authenticated.';
+    if (inquiryTab === 'sponsorship') {
+      msg = 'Sponsorship Proposal Authenticated. Reference generated under mutual NDA.';
+    } else if (inquiryTab === 'advertising') {
+      msg = 'Media & Advertising Alignments recorded. Editorial review queued.';
+    } else if (inquiryTab === 'speakers') {
+      msg = 'Keynote Nomination received. Steering Committee vetting initialized.';
+    }
+    setToastMessage(msg);
     setShowToast(true);
   };
 
@@ -167,7 +582,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
 
           {/* Navigation Links - Desktop Only */}
           <div className="hidden md:flex items-center gap-1 lg:gap-2 text-xs font-semibold uppercase tracking-wide font-sans" id="nav-links-wrapper">
-            {(['home', 'about', 'agenda', 'speakers', 'sponsorship'] as PageId[]).map((pid) => (
+            {(['home', 'about', 'agenda', 'speakers', 'contact'] as PageId[]).map((pid) => (
               <button
                 key={pid}
                 onClick={() => onNavigate(pid)}
@@ -178,7 +593,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                 }`}
                 id={`nav-link-${pid}`}
               >
-                {pid === 'home' ? 'Home' : pid === 'about' ? 'Vision' : pid === 'agenda' ? 'Agenda' : pid === 'speakers' ? 'Speakers' : 'Partners'}
+                {pid === 'home' ? 'Home' : pid === 'about' ? 'Vision' : pid === 'agenda' ? 'Agenda' : pid === 'speakers' ? 'Speakers' : 'Inquiry'}
               </button>
             ))}
           </div>
@@ -190,7 +605,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               className="text-xs bg-gray-950 text-white hover:bg-gray-800 font-bold px-5 py-2.5 rounded-md transition-all duration-200 cursor-pointer shadow-sm tracking-wide"
               id="nav-action-button"
             >
-              Submit Inquiry
+              Inquiry
             </button>
           </div>
 
@@ -258,7 +673,6 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                     { label: 'Vision', id: 'about' },
                     { label: 'Agenda', id: 'agenda' },
                     { label: 'Speakers', id: 'speakers' },
-                    { label: 'Partners', id: 'sponsorship' },
                     { label: 'Inquiry', id: 'contact' }
                   ] as const).map((item) => (
                     <button
@@ -306,9 +720,9 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                 <ShieldCheck className="h-5 w-5" />
               </div>
               <div className="space-y-1 flex-1">
-                <h4 className="font-extrabold text-sm tracking-wide">Inquiry Authenticated</h4>
-                <p className="text-xs text-gray-400 leading-relaxed font-medium">
-                  Your registration token has been generated. The Steering Committee will review your firm metadata within 24 business hours.
+                <h4 className="font-extrabold text-sm tracking-wide text-white uppercase font-mono text-[10px] tracking-widest">[SECURE REGISTER STATUS]</h4>
+                <p className="text-xs text-gray-300 leading-relaxed font-medium">
+                  {toastMessage}
                 </p>
               </div>
               <button 
@@ -430,26 +844,9 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               </div>
             </ScrollAnimatedSection>
 
-            {/* SECTION: PROXIMITY STATS BAND (py-16, wide) */}
-            <ScrollAnimatedSection className="bg-gray-950 text-white py-16 px-6 lg:px-12 relative border-y border-gray-900" id="wireframe-section-stats-band">
-              <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-800">
-                <div className="p-3 space-y-1">
-                  <div className="text-3xl md:text-4xl font-black font-display text-white tracking-tight">150 Only</div>
-                  <div className="text-[10px] text-gray-400 uppercase tracking-widest font-bold font-mono">Cohort</div>
-                </div>
-                <div className="p-3 space-y-1 pt-6 md:pt-2">
-                  <div className="text-3xl md:text-4xl font-black font-display text-white tracking-tight">$14.2B+</div>
-                  <div className="text-[10px] text-gray-400 uppercase tracking-widest font-bold font-mono">Portfolio Assets</div>
-                </div>
-                <div className="p-3 space-y-1 pt-6 md:pt-2">
-                  <div className="text-3xl md:text-4xl font-black font-display text-white tracking-tight">12+ Major Cities</div>
-                  <div className="text-[10px] text-gray-400 uppercase tracking-widest font-bold font-mono">Pan-India Footprint</div>
-                </div>
-                <div className="p-3 space-y-1 pt-6 md:pt-2">
-                  <div className="text-3xl md:text-4xl font-black font-display text-white tracking-tight">94.2%</div>
-                  <div className="text-[10px] text-gray-400 uppercase tracking-widest font-bold font-mono">C-Suite &amp; Founders</div>
-                </div>
-              </div>
+            {/* THE ANIMATED INDIA CONNECTIVITY NETWORK GLOBE */}
+            <ScrollAnimatedSection className="px-6 py-28 border-b border-gray-100 max-w-7xl mx-auto w-full" id="home-globe-section">
+              <IndiaConnectivityGlobe />
             </ScrollAnimatedSection>
 
             {/* SECTION: VALUE PROPS & PILLARS (py-24 to py-36) */}
@@ -544,6 +941,13 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                   </div>
                 </div>
 
+              </div>
+            </ScrollAnimatedSection>
+
+            {/* SECTION: SUMMIT PARTNERS SHOWCASE */}
+            <ScrollAnimatedSection className="border-t border-b border-gray-100 bg-gray-50/50 py-28 px-6 lg:px-12 w-full" id="home-partners-showcase-section">
+              <div className="max-w-7xl mx-auto">
+                <SummitPartnersShowcase />
               </div>
             </ScrollAnimatedSection>
 
@@ -649,56 +1053,16 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               </div>
             </ScrollAnimatedSection>
 
-            {/* HIGH-STATURE LEADERSHIP PROFILE CARDS (Marcus Vance, Elena Rostova, Siddharth Mehta) */}
-            <ScrollAnimatedSection className="py-28 px-6 lg:px-12 relative max-w-7xl mx-auto w-full space-y-16" id="wireframe-section-about-leadership">
-              <div className="text-center space-y-3 max-w-2xl mx-auto">
-                <span className="text-[10px] font-bold text-amber-700 tracking-widest uppercase font-mono block">STABILIZING THE TABLE</span>
-                <h2 className="text-3xl font-black text-gray-900 font-display tracking-tight">Summit Leadership &amp; Trustees</h2>
-                <p className="text-xs text-gray-500">The dedicated organizing partners directing the private alignments and high-touch concierge logistics.</p>
-              </div>
-
-              {/* Dynamic rendering of custom requested profiles */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-4">
-                {LEADERSHIP_TEAM.map((member) => (
-                  <div key={member.id} className="border border-gray-200 rounded-xl p-6 bg-white shadow-sm flex flex-col justify-between space-y-6">
-                    <div className="space-y-5">
-                      <div className="relative flex justify-center">
-                        <CustomAvatar name={member.name} size="lg" />
-                        {member.badge && (
-                          <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-gray-900 text-white border border-gray-800 font-mono text-[8px] font-bold px-2 py-0.5 rounded shadow-sm whitespace-nowrap">
-                            {member.badge}
-                          </span>
-                        )}
-                      </div>
-                      <div className="text-center pt-2">
-                        <h4 className="font-extrabold text-base text-gray-900">{member.name}</h4>
-                        <p className="text-[10px] text-amber-700 font-mono font-bold uppercase mt-1 tracking-widest">{member.role}</p>
-                      </div>
-                      <p className="text-xs text-gray-500 leading-relaxed text-center">
-                        {member.bio}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+            {/* MAGAZINE MEDIA COLLAGE */}
+            <ScrollAnimatedSection className="py-28 px-6 lg:px-12 bg-gray-50/50 border-t border-b border-gray-100 w-full" id="vision-magazine-collage-section">
+              <div className="max-w-7xl mx-auto">
+                <MagazineMediaCollage />
               </div>
             </ScrollAnimatedSection>
 
-            {/* HISTORIC ECOSYSTEM IMPACT METRICS BANNER */}
-            <ScrollAnimatedSection className="bg-gray-950 text-white py-28 px-6 lg:px-12 text-center border-t border-gray-900" id="wireframe-section-about-metrics">
-              <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 divide-y md:divide-y-0 md:divide-x divide-gray-800">
-                <div className="p-2 space-y-2">
-                  <span className="block text-3xl font-black text-white font-display">4 Assemblies</span>
-                  <span className="text-[10px] text-gray-400 uppercase tracking-widest font-bold font-mono">Successfully Completed</span>
-                </div>
-                <div className="p-2 pt-6 md:pt-2 space-y-2">
-                  <span className="block text-3xl font-black text-white font-display">320+ Alumni</span>
-                  <span className="text-[10px] text-gray-400 uppercase tracking-widest font-bold font-mono">Aligned Global Owner Network</span>
-                </div>
-                <div className="p-2 pt-6 md:pt-2 space-y-2">
-                  <span className="block text-3xl font-black text-white font-display">14 Ventures</span>
-                  <span className="text-[10px] text-gray-400 uppercase tracking-widest font-bold font-mono">Direct Co-Investments Catalyzed</span>
-                </div>
-              </div>
+            {/* STRATEGIC VISION FRAMEWORKS */}
+            <ScrollAnimatedSection className="py-28 px-6 lg:px-12 w-full max-w-7xl mx-auto" id="vision-strategic-frameworks-section">
+              <StrategicVisionFrameworks />
             </ScrollAnimatedSection>
 
           </div>
@@ -884,29 +1248,11 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-3xl" id="speakers-subhead">
                 We do not host professional generalist speakers or consultants. Every panelist is actively directing substantial capital, scale, or managing legacy corporate investments.
               </p>
- 
-              {/* Categorization tabs */}
-              <div className="flex flex-wrap gap-2 border-b border-gray-200 pb-2">
-                {['All', 'Founder', 'Investor', 'Industry Leader'].map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedSpeakerCat(cat)}
-                    className={`px-4 py-2.5 text-xs font-bold rounded-t-lg transition-all cursor-pointer ${
-                      selectedSpeakerCat === cat
-                        ? 'bg-gray-950 text-white border-b-2 border-gray-950 font-black'
-                        : 'text-gray-500 hover:text-gray-950 hover:bg-gray-50'
-                    }`}
-                    id={`speaker-filter-${cat}`}
-                  >
-                    {cat === 'All' ? 'All Roles' : `${cat}s`}
-                  </button>
-                ))}
-              </div>
             </ScrollAnimatedSection>
 
             {/* SPEAKER GRID WITH PROMINENT PROFILE CARDS */}
             <ScrollAnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-8" id="speakers-rendered-grid">
-              {SPEAKERS.filter(spk => selectedSpeakerCat === 'All' || spk.category === selectedSpeakerCat).map((speaker) => (
+              {SPEAKERS.map((speaker) => (
                 <div 
                   key={speaker.id} 
                   className="border border-gray-200 rounded-xl p-8 bg-white flex flex-col sm:flex-row gap-6 hover:shadow-lg transition-all relative"
@@ -950,99 +1296,6 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                   </div>
                 </div>
               ))}
-            </ScrollAnimatedSection>
-
-          </div>
-        )}
-
-        {/* ==================== PARTNERS PAGE ==================== */}
-        {activePageId === 'sponsorship' && (
-          <div className="flex-1 py-28 px-6 lg:px-12 space-y-12 max-w-7xl mx-auto w-full border-t border-gray-100" id="page-sponsorship-rendered">
-            
-            <ScrollAnimatedSection className="space-y-6 pt-4 w-full" id="partners-page-intro-section">
-              <span className="inline-block text-[11px] font-mono uppercase text-amber-700 border border-amber-500/20 px-3.5 py-1.5 rounded bg-amber-500/5 tracking-widest font-bold" id="sponsorship-eyebrow">
-                PARTNERSHIP ALIGNMENTS
-              </span>
-              <h1 className="text-4xl md:text-6xl font-black text-gray-900 font-display tracking-tight leading-tight md:leading-none" id="sponsorship-heading">
-                Bespoke Partnership Opportunities By Private Invitation Only
-              </h1>
-              <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-3xl" id="sponsorship-subhead">
-                Position your professional services or investment brand inside an ultra-exclusive room of 15-20 enterprise operators. No transactional trade booths, no general advertising—only direct relationship design.
-              </p>
-            </ScrollAnimatedSection>
-
-            {/* Exclusive Partnership comparison matrices (No public pricing) */}
-            <ScrollAnimatedSection className="space-y-12 w-full" id="sponsorship-matrix-and-benefits">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8" id="sponsorship-comparison-matrix">
-                {SPONSORS.map((spon) => (
-                  <div 
-                    key={spon.id} 
-                    onClick={() => setSelectedSponsorTier(spon.id)}
-                    className={`border rounded-xl p-8 cursor-pointer transition-all flex flex-col justify-between space-y-6 ${
-                      selectedSponsorTier === spon.id
-                        ? 'border-gray-950 bg-gray-50/50 ring-1 ring-gray-950 shadow-md'
-                        : 'border-gray-200 bg-white hover:border-gray-300'
-                    }`}
-                    id={`sponsor-tier-card-${spon.id}`}
-                  >
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="text-[9px] font-mono font-bold text-gray-400 tracking-wider">[{spon.slotsAvailable} STRICT SLOT{spon.slotsAvailable > 1 ? 'S' : ''}]</span>
-                        {selectedSponsorTier === spon.id && <CheckCircle2 className="h-5 w-5 text-gray-950" />}
-                      </div>
-                      <h3 className="font-black text-gray-950 text-lg leading-tight">{spon.name}</h3>
-                      <p className="text-xs font-bold text-amber-700 font-mono tracking-wider uppercase mt-1">By Private Board Invitation Only</p>
-                    </div>
-
-                    <div className="pt-4 border-t border-gray-100 text-[11px] text-gray-600 space-y-2 font-sans font-medium">
-                      <div className="flex justify-between">
-                        <span>VIP Pass Allocation:</span>
-                        <strong className="text-gray-900">{spon.vipPasses} credentials</strong>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Executive Keynote Slot:</span>
-                        <strong className="text-gray-900">{spon.speakingSlot ? 'Guaranteed Presence' : 'Board Invitation Vetted'}</strong>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Subterranean Suite Access:</span>
-                        <strong className="text-gray-900">{spon.exhibitionSpace ? 'Private Boardroom Reserved' : 'Common Lounge Only'}</strong>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Partnership benefits detail block */}
-              {selectedSponsorTier && (
-                <div className="border border-gray-200 rounded-xl p-8 bg-gray-50/50 space-y-4 animate-fade-in" id="sponsorship-tier-details">
-                  {(() => {
-                    const tier = SPONSORS.find(s => s.id === selectedSponsorTier);
-                    if (!tier) return null;
-                    return (
-                      <div className="space-y-4" id={`benefits-${tier.id}`}>
-                        <span className="text-[10px] font-mono font-black text-gray-900 uppercase tracking-widest block">
-                          Bespoke Strategic Activations for {tier.name}:
-                        </span>
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs text-gray-700 list-inside list-disc font-medium">
-                          {tier.benefits.map((benefit, bIdx) => (
-                            <li key={bIdx} className="leading-relaxed">{benefit}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    );
-                  })()}
-                </div>
-              )}
-            </ScrollAnimatedSection>
-
-            {/* Partnership CTA */}
-            <ScrollAnimatedSection className="text-center pt-4" id="partnerships-outro-cta">
-              <button 
-                onClick={() => onNavigate('contact')}
-                className="bg-gray-950 hover:bg-gray-800 text-white font-bold text-xs px-8 py-4 rounded-md shadow-md cursor-pointer transition-colors tracking-wide uppercase"
-              >
-                Request Private Partnership Prospectus
-              </button>
             </ScrollAnimatedSection>
 
           </div>
@@ -1211,6 +1464,48 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               </div>
             </ScrollAnimatedSection>
 
+            {/* 3-Tab Selection Interface for Inquiry Types */}
+            <ScrollAnimatedSection className="w-full" id="inquiry-tab-selection-container">
+              <div className="bg-gray-50 border border-gray-200 p-2 rounded-2xl max-w-2xl mx-auto flex gap-2">
+                <button
+                  type="button"
+                  onClick={() => setInquiryTab('sponsorship')}
+                  className={`flex-1 py-3 px-4 text-xs font-bold rounded-xl transition-all cursor-pointer text-center ${
+                    inquiryTab === 'sponsorship'
+                      ? 'bg-gray-950 text-white shadow-md'
+                      : 'text-gray-500 hover:text-gray-950 hover:bg-gray-100'
+                  }`}
+                  id="inquiry-tab-sponsorship"
+                >
+                  Sponsorship
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setInquiryTab('advertising')}
+                  className={`flex-1 py-3 px-4 text-xs font-bold rounded-xl transition-all cursor-pointer text-center ${
+                    inquiryTab === 'advertising'
+                      ? 'bg-gray-950 text-white shadow-md'
+                      : 'text-gray-500 hover:text-gray-950 hover:bg-gray-100'
+                  }`}
+                  id="inquiry-tab-advertising"
+                >
+                  Advertising &amp; Media
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setInquiryTab('speakers')}
+                  className={`flex-1 py-3 px-4 text-xs font-bold rounded-xl transition-all cursor-pointer text-center ${
+                    inquiryTab === 'speakers'
+                      ? 'bg-gray-950 text-white shadow-md'
+                      : 'text-gray-500 hover:text-gray-950 hover:bg-gray-100'
+                  }`}
+                  id="inquiry-tab-speakers"
+                >
+                  Keynote Speaker Vetting
+                </button>
+              </div>
+            </ScrollAnimatedSection>
+
             {/* 2. Bottom Container (Two-Column Master Grid) */}
             <ScrollAnimatedSection className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start pt-4" id="contact-bottom-master-grid">
               
@@ -1246,9 +1541,15 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                     id="registration-form"
                   >
                     <div className="space-y-1.5">
-                      <span className="text-[10px] font-mono uppercase text-amber-700 font-black block tracking-widest">[APPLICATION FORM]</span>
-                      <h2 className="text-xl font-bold text-gray-900 tracking-tight">VIP Candidate Details</h2>
-                      <p className="text-gray-500 text-[11px]">All submissions are secure-encrypted and protected by an operational non-disclosure agreement.</p>
+                      <span className="text-[10px] font-mono uppercase text-amber-700 font-black block tracking-widest">
+                        {inquiryTab === 'sponsorship' ? '[SPONSORSHIP REGISTRATION PORTAL]' : inquiryTab === 'advertising' ? '[MEDIA & ADVERTISING AGREEMENT]' : '[KEYNOTE OPERATOR NOMINATION]'}
+                      </span>
+                      <h2 className="text-xl font-bold text-gray-900 tracking-tight">
+                        {inquiryTab === 'sponsorship' ? 'Sponsorship Credentials' : inquiryTab === 'advertising' ? 'Brand & Media Coordinates' : 'Vetted Operator Credentials'}
+                      </h2>
+                      <p className="text-gray-500 text-[11px]">
+                        {inquiryTab === 'sponsorship' ? 'Position your brand inside our high-density chambers. All applications are protected by mutual NDA.' : inquiryTab === 'advertising' ? 'Inquire about digital or physical magazine catalog inclusion, media banners, and print placements.' : 'Nominate yourself or an enterprise peer to address the 15-20 boardroom delegation.'}
+                      </p>
                     </div>
 
                     <div className="space-y-4">
@@ -1296,9 +1597,15 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
 
                       {/* Message field */}
                       <div className="space-y-2">
-                        <label className="text-[10px] font-mono uppercase text-gray-500 block font-bold tracking-wider">Message</label>
+                        <label className="text-[10px] font-mono uppercase text-gray-500 block font-bold tracking-wider">Message Details</label>
                         <textarea 
-                          placeholder="Please state your current enterprise scale (EBITDA), key exit timeline parameters, or specific summit expectations..."
+                          placeholder={
+                            inquiryTab === 'sponsorship' 
+                              ? 'Describe your target partnership budget alignment or bespoke spatial requirements...'
+                              : inquiryTab === 'advertising'
+                              ? 'State your target catalog advertising slots, media channels, or physical signage formats...'
+                              : 'Detail the nominee’s active corporate EBITDA scale, previous board/keynote achievements, or specific operational focus area...'
+                          }
                           value={inquiryForm.conciergeNotes}
                           onChange={(e) => setInquiryForm(prev => ({ ...prev, conciergeNotes: e.target.value }))}
                           className="w-full border border-gray-200 rounded-lg p-4 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white text-gray-800 text-xs h-32 resize-none transition-all shadow-sm"
@@ -1312,7 +1619,9 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                         type="submit"
                         className="w-full bg-gray-950 text-white font-bold py-4 rounded-lg hover:bg-gray-800 transition-all flex items-center justify-center gap-2 cursor-pointer shadow-md text-xs uppercase tracking-widest font-sans"
                       >
-                        <span>Submit Secure Strategic Inquiry</span>
+                        <span>
+                          {inquiryTab === 'sponsorship' ? 'Submit Sponsorship Inquiry' : inquiryTab === 'advertising' ? 'Submit Media Inquiry' : 'Submit Speaker Nomination'}
+                        </span>
                         <Send className="h-4 w-4" />
                       </button>
                     </div>
@@ -1434,7 +1743,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               </button>
             </div>
 
-            <div className="p-8 space-y-6" id="modal-body">
+            <div className="p-8 space-y-6 overflow-y-auto max-h-[80vh]" id="modal-body">
               <div className="flex gap-4 items-start pb-5 border-b border-gray-100">
                 <img 
                   src={activeSpeaker.image} 
@@ -1442,13 +1751,21 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                   className="w-16 h-16 rounded-full border border-gray-200 object-cover bg-gray-50 shadow-sm"
                   referrerPolicy="no-referrer"
                 />
-                <div className="space-y-1.5">
-                  <span className="text-[10px] font-mono font-bold text-gray-400 uppercase tracking-widest block">{activeSpeaker.company}</span>
+                <div className="space-y-1.5 flex-1 min-w-0">
+                  <span className="text-[10px] font-mono font-bold text-gray-400 uppercase tracking-widest block truncate">{activeSpeaker.company}</span>
                   <h3 className="text-lg font-black text-gray-900 leading-none">{activeSpeaker.name}</h3>
                   <p className="text-xs text-gray-700 font-bold">{activeSpeaker.role}</p>
-                  <span className="inline-block text-[9px] font-bold px-2 py-0.5 bg-amber-50 text-amber-800 border border-amber-100/60 rounded uppercase tracking-wider mt-1">
-                    Verified {activeSpeaker.category}
-                  </span>
+                  
+                  <div className="flex flex-wrap gap-1.5 pt-1">
+                    <span className="inline-block text-[9px] font-bold px-2 py-0.5 bg-amber-50 text-amber-800 border border-amber-100/60 rounded uppercase tracking-wider">
+                      Verified {activeSpeaker.category}
+                    </span>
+                    {activeSpeaker.corporateStatus && (
+                      <span className="inline-block text-[9px] font-bold px-2 py-0.5 bg-gray-100 text-gray-800 border border-gray-200 rounded uppercase tracking-wider">
+                        {activeSpeaker.corporateStatus}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -1459,7 +1776,51 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                 </p>
               </div>
 
-              <div className="pt-4 flex gap-3">
+              {activeSpeaker.pastAchievements && activeSpeaker.pastAchievements.length > 0 && (
+                <div className="space-y-2 text-xs text-gray-600" id="modal-achievements-section">
+                  <span className="font-mono text-[9px] uppercase text-amber-800 font-bold tracking-wider block">[VERIFIED MILESTONES & ACHIEVEMENTS]</span>
+                  <ul className="space-y-2 bg-amber-500/5 p-4 rounded-lg border border-amber-500/10 font-medium">
+                    {activeSpeaker.pastAchievements.map((achievement, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-gray-800">
+                        <CheckCircle2 className="h-4 w-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Digital Coordinates (Linkedin and Website) */}
+              {(activeSpeaker.linkedin || activeSpeaker.website) && (
+                <div className="grid grid-cols-2 gap-4 pt-2" id="modal-socials-section">
+                  {activeSpeaker.linkedin && (
+                    <a 
+                      href={activeSpeaker.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 border border-gray-200 hover:border-gray-900 rounded-lg p-3 text-xs font-semibold text-gray-700 hover:text-gray-950 transition-colors bg-white"
+                      id="modal-linkedin-link"
+                    >
+                      <Linkedin className="h-4 w-4 text-amber-700" />
+                      <span>LinkedIn Profile</span>
+                    </a>
+                  )}
+                  {activeSpeaker.website && (
+                    <a 
+                      href={activeSpeaker.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 border border-gray-200 hover:border-gray-900 rounded-lg p-3 text-xs font-semibold text-gray-700 hover:text-gray-950 transition-colors bg-white"
+                      id="modal-website-link"
+                    >
+                      <Globe className="h-4 w-4 text-amber-700" />
+                      <span>Corporate Portal</span>
+                    </a>
+                  )}
+                </div>
+              )}
+
+              <div className="pt-4 flex gap-3 border-t border-gray-100">
                 <button
                   onClick={() => {
                     alert(`Private boardroom booking request for ${activeSpeaker.name} logged securely.`);

@@ -69,7 +69,15 @@ export const SPEAKERS: Speaker[] = [
     bio: 'Pioneered enterprise SaaS hyper-scaling. Successfully scaled Horizon Cloud from seed stage to a $1.2B acquisition by Oracle. Expert in recurring revenue optimization and executive-level organizational alignment.',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face',
     category: 'Founder',
-    featured: true
+    featured: true,
+    corporateStatus: 'Active Managing Partner at Rostova Capital & Board Director at 3 Enterprise Scale-ups.',
+    pastAchievements: [
+      'Successfully scaled Horizon Cloud from Seed through to a $1.2B strategic acquisition by Oracle.',
+      'Architected early secondary market liquidity rounds returning over $140M in aggregate to original pre-A founders.',
+      'Supervised regional GTM expansions into EMEA, driving a 420% increase in recurring enterprise revenues.'
+    ],
+    linkedin: 'https://linkedin.com/in/elena-rostova-placeholder',
+    website: 'https://rostovacapital.com'
   },
   {
     id: 'spk-2',
@@ -79,7 +87,15 @@ export const SPEAKERS: Speaker[] = [
     bio: 'Oversees a $3.4B late-stage growth fund. Led primary investments in multiple enterprise category leaders. Specializes in late-stage recapitalizations, debt structures, and preparing founder-led firms for public markets.',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face',
     category: 'Investor',
-    featured: true
+    featured: true,
+    corporateStatus: 'Managing Partner & Investment Committee Chairman at Ascent Growth Capital.',
+    pastAchievements: [
+      'Deployed $1.8B+ across 22 growth-stage B2B enterprise SaaS and strategic industrial platforms.',
+      'Engineered direct recapitalization programs and structured debt protocols for high-density legacy conglomerates.',
+      'Advised over 12 legacy founders on successful IPO launch frameworks and post-listing capital allocation.'
+    ],
+    linkedin: 'https://linkedin.com/in/vikram-malhotra-placeholder',
+    website: 'https://ascentgrowthcapital.com'
   },
   {
     id: 'spk-3',
@@ -89,7 +105,15 @@ export const SPEAKERS: Speaker[] = [
     bio: 'Leading authority on family office asset allocation and generational transition. Advisor to over 40 family offices representing $12B+ in assets under management. Focused on private equity alignment for business owners.',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
     category: 'Industry Leader',
-    featured: true
+    featured: true,
+    corporateStatus: 'President & Chief Investment Officer at Vance Family Office Alliance.',
+    pastAchievements: [
+      'Supervised direct capital allocations and succession programs for 40+ legacy family offices with $12B+ AUM.',
+      'Pioneered off-the-record direct peer co-investment networks bypassive of standard fee-drag intermediations.',
+      'Advised central banking policy panels on private credit liquidity requirements and long-term asset structures.'
+    ],
+    linkedin: 'https://linkedin.com/in/marcus-vance-placeholder',
+    website: 'https://vancecapitalgroup.com'
   },
   {
     id: 'spk-4',
@@ -99,7 +123,15 @@ export const SPEAKERS: Speaker[] = [
     bio: 'Active direct investor in enterprise infrastructure. Formerly co-founder of NexaTech (acquired for $850M). Passionate about backing second-generation founders seeking systematic growth strategies.',
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face',
     category: 'Investor',
-    featured: false
+    featured: false,
+    corporateStatus: 'Managing Director of Mehta Family Office & Founder Trustee of NexaTech Foundation.',
+    pastAchievements: [
+      'Successfully engineered the competitive corporate sale of NexaTech to IBM for $850M.',
+      'Led 25+ direct B2B co-investments alongside top-tier global venture and private equity houses.',
+      'Maintains active advisory seats on 6 industrial logistics and heavy enterprise cloud infrastructure boards.'
+    ],
+    linkedin: 'https://linkedin.com/in/siddharth-mehta-placeholder',
+    website: 'https://mehtafo.co'
   },
   {
     id: 'spk-5',
@@ -109,7 +141,15 @@ export const SPEAKERS: Speaker[] = [
     bio: 'Expert in global supply chains and cross-border M&A. Spearheaded apex consolidation strategy completing 14 programmatic acquisitions totaling $450M in value over the past 4 years.',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face',
     category: 'Industry Leader',
-    featured: false
+    featured: false,
+    corporateStatus: 'Chief Strategy Officer of Apex Global Logistics & Board Member of Trans-Oceanic Shipping.',
+    pastAchievements: [
+      'Designed and executed a massive programmatic roll-up strategy completing 14 corporate acquisitions.',
+      'Integrated fragmented multi-state shipping routes into a singular high-EBITDA national shipping champion.',
+      'Drove structural optimization that expanded consolidated EBITDA margins by 620 basis points within 36 months.'
+    ],
+    linkedin: 'https://linkedin.com/in/diana-thorne-placeholder',
+    website: 'https://apexgloballogistics.com'
   }
 ];
 

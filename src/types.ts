@@ -9,6 +9,10 @@ export interface Speaker {
   image: string; // Symbolic representation / descriptive placeholder
   category: 'Founder' | 'Investor' | 'Industry Leader' | 'Ecosystem Partner';
   featured: boolean;
+  corporateStatus?: string;
+  pastAchievements?: string[];
+  linkedin?: string;
+  website?: string;
 }
 
 export interface Session {
