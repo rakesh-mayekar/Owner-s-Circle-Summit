@@ -30,7 +30,7 @@ export const LEADERSHIP_TEAM: TeamMember[] = [
     id: 'team-3',
     name: 'Deepak Rao',
     role: 'Managing Director & Strategic Board Advisor',
-    badge: 'Sovereign Wealth & Succession Lead',
+    badge: 'Family Wealth & Succession Lead',
     bio: 'Distinguished advisor on corporate governance, complex family office capital allocations, and cross-border asset transitions. Advisor to legacy corporate conglomerates representing $15B+ in aggregate valuation.',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face'
   },
@@ -161,7 +161,7 @@ export const SESSIONS: Session[] = [
     speakerIds: [],
     track: 'Track A: Scaling & Operations',
     description: 'Bespoke check-in, private concierge briefing, and introductory high-value peer networking for the 15-20 designated owners.',
-    location: 'Sovereign Boardroom Foyer'
+    location: 'Executive Boardroom Foyer'
   },
   {
     id: 'sess-2',
@@ -170,7 +170,7 @@ export const SESSIONS: Session[] = [
     speakerIds: ['spk-2', 'spk-3'],
     track: 'Track A: Scaling & Operations',
     description: 'A highly confidential analysis of private credit markets, debt leverage ratios, and enterprise valuation multiples.',
-    location: 'Sovereign Boardroom A'
+    location: 'Executive Boardroom A'
   },
   {
     id: 'sess-3',
@@ -179,7 +179,7 @@ export const SESSIONS: Session[] = [
     speakerIds: ['spk-1'],
     track: 'Track B: Capital & Exit',
     description: 'Inside the $1.2B Horizon Cloud exit. Managing incoming sponsor interest without halting daily operations and retaining board dominance.',
-    location: 'Sovereign Boardroom B'
+    location: 'Executive Boardroom B'
   },
   {
     id: 'sess-4',
@@ -188,7 +188,7 @@ export const SESSIONS: Session[] = [
     speakerIds: ['spk-5'],
     track: 'Track A: Scaling & Operations',
     description: 'Step-by-step framework to build an internal acquisition engine, execute target due diligence under extreme privacy, and scale enterprise multiple.',
-    location: 'Sovereign Boardroom A'
+    location: 'Executive Boardroom A'
   },
   {
     id: 'sess-5',
@@ -204,7 +204,7 @@ export const SESSIONS: Session[] = [
 export const SPONSORS: SponsorTier[] = [
   {
     id: 'spon-title',
-    name: 'Sovereign Title Partner',
+    name: 'Elite Title Partner',
     price: 'Invite Only',
     slotsAvailable: 1,
     benefits: [
@@ -300,7 +300,7 @@ export const WIREFRAME_SPECS: WireframePageSpec[] = [
         name: 'CORE STRATEGIC PILLARS',
         description: 'Three-column high-contrast grid outlining the precise strategic focus of Owner\'s Circle.',
         elements: [
-          'Pillar 1: "Sovereign Growth Engineering" | Subtext: Operational architectures to bypass traditional growth limits and professionalize executive teams.',
+          'Pillar 1: "High-Impact Growth Systems" | Subtext: Operational architectures to bypass traditional growth limits and professionalize executive teams.',
           'Pillar 2: "Private Capital Alignments" | Subtext: Tactical models to handle incoming private equity offers, structure recapitalizations, and execute tax-optimized exits.',
           'Pillar 3: "Generational & Liquidity Blueprints" | Subtext: Bypassing standard intermediation channels to construct permanent co-investment alignments.'
         ]
@@ -335,7 +335,7 @@ export const WIREFRAME_SPECS: WireframePageSpec[] = [
         name: 'EXECUTIVE PROFILE & SUMMIT VISION',
         description: 'Asymmetric narrative layout stating the core mandate and founder vision.',
         elements: [
-          'H1 Narrative Title: "The Manifesto of Sovereign Enterprise Owners."',
+          'H1 Narrative Title: "The Manifesto of Independent Enterprise Owners."',
           'Subhead: "Why standard industry conferences fail elite operators—and how we constructed an alternative ecosystem designed for high-density truth."',
           'Primary Paragraph: Detailed copy explaining the origin of Owner\'s Circle as a closed-door roundtable of 8 founders that evolved into an institutional scale network.'
         ]

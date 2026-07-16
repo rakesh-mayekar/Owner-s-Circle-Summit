@@ -76,7 +76,7 @@ const SummitPartnersShowcase = () => {
           </div>
           <div className="flex justify-center">
             <div className="w-full max-w-sm bg-gray-900/60 border border-gray-800 rounded-xl p-6 hover:border-amber-500/30 hover:bg-gray-900 transition-all text-center flex flex-col items-center justify-center gap-1.5 shadow-md">
-              <span className="font-extrabold text-amber-500 font-sans tracking-widest text-base uppercase">SOVEREIGN WEALTH ASSOCIATION</span>
+              <span className="font-extrabold text-amber-500 font-sans tracking-widest text-base uppercase">GLOBAL WEALTH ASSOCIATION</span>
               <span className="text-[9px] font-mono text-gray-500 uppercase font-semibold">Global Generational Capital Trust</span>
             </div>
           </div>
@@ -136,7 +136,7 @@ const IndiaConnectivityGlobe = () => {
     { name: 'Bengaluru', x: 215, y: 480, tag: 'Tech Enterprise Cluster', info: 'Founder Foundations' },
     { name: 'Pune', x: 145, y: 375, tag: 'Industrial Corridor', info: 'Family Offices' },
     { name: 'Hyderabad', x: 235, y: 400, tag: 'Enterprise Cloud Core', info: 'Primary Asset Base' },
-    { name: 'Chennai', x: 250, y: 490, tag: 'Maritime Export Gate', info: 'Sovereign Alliances' },
+    { name: 'Chennai', x: 250, y: 490, tag: 'Maritime Export Gate', info: 'Strategic Alliances' },
     { name: 'Kolkata', x: 390, y: 280, tag: 'Heritage Owner Base', info: 'Legacy Consolidations' }
   ];
 
@@ -156,10 +156,11 @@ const IndiaConnectivityGlobe = () => {
   };
 
   return (
-    <div className="border border-gray-800 rounded-2xl bg-gray-950 p-8 lg:p-12 shadow-2xl relative overflow-hidden flex flex-col lg:flex-row gap-12 items-center" id="india-connectivity-globe-container">
+    <div className="bg-gray-950 py-16 md:py-24 px-6 lg:px-12 w-full relative overflow-hidden" id="india-connectivity-globe-container">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.03),transparent_70%)] pointer-events-none" />
 
-      <div className="lg:w-5/12 space-y-6 relative z-10 text-left">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center w-full">
+        <div className="lg:w-4/12 space-y-6 relative z-10 text-left">
         <span className="inline-block text-[9px] font-mono uppercase text-amber-500 border border-amber-500/20 px-3.5 py-1.5 rounded bg-amber-500/5 tracking-widest font-bold">
           • MULTI-CITY CONTINUOUS ALIGNMENT
         </span>
@@ -169,25 +170,10 @@ const IndiaConnectivityGlobe = () => {
         <p className="text-gray-400 text-xs leading-relaxed font-sans font-medium">
           Our exclusive footprint spans the country&apos;s leading capital markets and industrial corridors. Continuous transactions and confidential liquidity networks bind India&apos;s primary legacy founders in a single, resilient operational loop.
         </p>
-
-        <div className="border-t border-gray-800 pt-6 space-y-4">
-          <div className="text-[10px] font-mono font-bold text-gray-500 uppercase tracking-widest">Active Corridors:</div>
-          <div className="grid grid-cols-2 gap-3">
-            {cities.slice(0, 4).map(c => (
-              <div key={c.name} className="flex items-center gap-2 bg-gray-900/40 border border-gray-800 p-2.5 rounded-lg">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
-                <div>
-                  <span className="block text-xs font-bold text-white leading-none">{c.name}</span>
-                  <span className="text-[9px] text-gray-500 font-mono font-semibold">{c.tag}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
-      <div className="lg:w-7/12 w-full flex justify-center relative z-10">
-        <div className="relative w-full max-w-[460px] aspect-[460/540] bg-gray-900/30 border border-gray-800/60 rounded-xl p-4 overflow-hidden shadow-inner flex items-center justify-center">
+      <div className="lg:w-8/12 w-full flex justify-center relative z-10">
+        <div className="relative w-full aspect-[460/540] bg-gray-900/30 border border-gray-800/60 rounded-xl p-4 overflow-hidden shadow-inner flex items-center justify-center">
           <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20" viewBox="0 0 460 540">
             <defs>
               <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
@@ -294,6 +280,7 @@ const IndiaConnectivityGlobe = () => {
         </div>
       </div>
     </div>
+    </div>
   );
 };
 
@@ -301,7 +288,7 @@ const IndiaConnectivityGlobe = () => {
 const MagazineMediaCollage = () => {
   const covers = [
     {
-      title: "THE SOVEREIGN EXIT",
+      title: "THE STRATEGIC EXIT",
       subtitle: "Napa Valley Special Edition",
       issue: "ISSUE IV // VOL XII",
       bgClass: "bg-zinc-950 text-white border-zinc-800",
@@ -392,9 +379,9 @@ const StrategicVisionFrameworks = () => {
     },
     {
       num: "02",
-      title: "Board Sovereignty & Autonomy Protocols",
-      subtitle: "Bypassing Invasive Sponsor Covenants",
-      desc: "Capital syndications often come with dilutive board covenants that paralyze the founder's long-term scale. We align operators with non-restrictive sovereign credit networks to preserve complete operating autonomy.",
+      title: "Board Independence & Leadership Control",
+      subtitle: "Bypassing Invasive Investor Demands",
+      desc: "Equity investment often comes with restrictive terms that limit the founder's control. We connect owners with non-restrictive private capital networks to preserve complete business decision control.",
       bullets: [
         "Non-restrictive growth debt configurations.",
         "Generational leadership preservation frameworks.",
@@ -405,7 +392,7 @@ const StrategicVisionFrameworks = () => {
       num: "03",
       title: "Cross-Border Transactional Security",
       subtitle: "Mitigating Geopolitical Asset Vulnerabilities",
-      desc: "Global industrial conglomerates must shield cash flows across volatile jurisdictions. We construct sovereign multi-city banking structures that insulate portfolio holdings from localized regulatory adjustments.",
+      desc: "Large businesses must protect cash flows across different regions. We establish secure multi-city corporate structures that protect business profits and holdings from local market changes.",
       bullets: [
         "Bespoke helipad transport logistically aligned.",
         "Offshore currency stability hedges.",
@@ -524,6 +511,8 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
   const [inquiryTab, setInquiryTab] = useState<'sponsorship' | 'advertising' | 'speakers'>('sponsorship');
   const [toastMessage, setToastMessage] = useState<string>('Your strategic inquiry has been authenticated.');
   const [inquirySubmitted, setInquirySubmitted] = useState<boolean>(false);
+  const [partnershipAmount, setPartnershipAmount] = useState<string>('50000');
+  const [customAmount, setCustomAmount] = useState<string>('');
   const [inquiryForm, setInquiryForm] = useState({
     fullName: '',
     email: '',
@@ -598,16 +587,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
             ))}
           </div>
 
-          {/* Action button - Desktop Only */}
-          <div className="hidden md:block">
-            <button
-              onClick={() => onNavigate('contact')}
-              className="text-xs bg-gray-950 text-white hover:bg-gray-800 font-bold px-5 py-2.5 rounded-md transition-all duration-200 cursor-pointer shadow-sm tracking-wide"
-              id="nav-action-button"
-            >
-              Inquiry
-            </button>
-          </div>
+
 
           {/* Menu Toggle - Mobile Only */}
           <button
@@ -845,7 +825,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
             </ScrollAnimatedSection>
 
             {/* THE ANIMATED INDIA CONNECTIVITY NETWORK GLOBE */}
-            <ScrollAnimatedSection className="px-6 py-28 border-b border-gray-100 max-w-7xl mx-auto w-full" id="home-globe-section">
+            <ScrollAnimatedSection className="w-full border-b border-gray-100" id="home-globe-section">
               <IndiaConnectivityGlobe />
             </ScrollAnimatedSection>
 
@@ -854,7 +834,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               <div className="max-w-3xl space-y-4">
                 <span className="text-[10px] font-bold text-amber-700 tracking-widest uppercase font-mono block">OUR FUNDAMENTAL MANDATES</span>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tight text-gray-900 font-display">
-                  Architected for Substantial, Sovereign Business Milestones.
+                  Architected for Substantial, Major Business Milestones.
                 </h2>
                 <p className="text-gray-500 text-sm leading-relaxed max-w-xl">
                   Every boardroom masterclass, closed panel session, and private networking circle is engineered to generate clear private exit leverage.
@@ -864,7 +844,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div className="space-y-4 bg-white p-2">
                   <span className="w-10 h-10 rounded-md bg-gray-50 text-gray-900 border border-gray-150 flex items-center justify-center font-black text-sm shadow-xs font-mono">01</span>
-                  <h3 className="font-extrabold text-gray-900 text-lg">Sovereign Growth Engineering</h3>
+                  <h3 className="font-extrabold text-gray-900 text-lg">Independent Growth Engineering</h3>
                   <p className="text-gray-600 text-xs leading-relaxed">
                     Deploy the precise organizational frameworks, algorithmic scaling protocols, and programmatic M&A pipelines to professionalize owner-led operations and bypass systemic industry limitations.
                   </p>
@@ -935,7 +915,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                       <div className="space-y-2">
                         <span className="text-[10px] font-mono tracking-widest uppercase text-amber-400 font-bold">ST. HELENA PRIVATE ESTATE CHAMBERS</span>
                         <h4 className="text-xl md:text-2xl font-bold font-display tracking-tight text-white">Meadowood Lane, California</h4>
-                        <p className="text-xs text-gray-300 max-w-md">Fully locked-down sovereign compound. No public access, no media registries, fully secured networking zones.</p>
+                        <p className="text-xs text-gray-300 max-w-md">Fully locked-down private compound. No public access, no media presence, and fully secured networking rooms.</p>
                       </div>
                     </div>
                   </div>
@@ -944,12 +924,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               </div>
             </ScrollAnimatedSection>
 
-            {/* SECTION: SUMMIT PARTNERS SHOWCASE */}
-            <ScrollAnimatedSection className="border-t border-b border-gray-100 bg-gray-50/50 py-28 px-6 lg:px-12 w-full" id="home-partners-showcase-section">
-              <div className="max-w-7xl mx-auto">
-                <SummitPartnersShowcase />
-              </div>
-            </ScrollAnimatedSection>
+
 
             {/* SECTION: SPEAKERS PREVIEW */}
             <ScrollAnimatedSection className="max-w-7xl mx-auto w-full px-6 py-24 md:py-32 space-y-12" id="wireframe-section-speakers-preview">
@@ -1046,7 +1021,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                       Our private Napa Valley assembly cap of 15-20 owners facilitates complete, off-the-record transparency. Protected by strict Chatham House Rules, delegates dissect capitalization adjustments, complex tax succession methodologies, and exit negotiation blueprints that would never be discussed in a public forum.
                     </p>
                     <p>
-                      This is not a general learning seminar; it is a high-density, peer-validated operations room for sovereign founders targeting generational liquidity and systematic enterprise scale.
+                      This is not a general learning seminar; it is a high-density, peer-validated operations room for independent founders targeting generational wealth and systematic enterprise scale.
                     </p>
                   </div>
                 </div>
@@ -1070,7 +1045,8 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
 
         {/* ==================== STRATEGIC AGENDA PAGE ==================== */}
         {activePageId === 'agenda' && (
-          <div className="flex-1 py-28 px-6 lg:px-12 max-w-7xl mx-auto w-full space-y-12 border-t border-gray-100" id="page-agenda-rendered">
+          <div className="flex-1 w-full px-6 py-28 border-t border-gray-100 bg-white" id="page-agenda-rendered">
+            <div className="max-w-7xl mx-auto w-full space-y-12">
             
             <ScrollAnimatedSection className="space-y-6 pt-4 w-full" id="agenda-page-intro-section">
               <span className="inline-block text-[11px] font-mono uppercase text-amber-700 border border-amber-500/20 px-3.5 py-1.5 rounded bg-amber-500/5 tracking-widest font-bold" id="agenda-eyebrow">
@@ -1231,12 +1207,14 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               </ScrollAnimatedSection>
             )}
 
+            </div>
           </div>
         )}
 
         {/* ==================== SPEAKERS PAGE ==================== */}
         {activePageId === 'speakers' && (
-          <div className="flex-1 py-28 px-6 lg:px-12 space-y-12 max-w-7xl mx-auto w-full border-t border-gray-100" id="page-speakers-rendered">
+          <div className="flex-1 w-full px-6 py-28 border-t border-gray-100 bg-white" id="page-speakers-rendered">
+            <div className="max-w-7xl mx-auto w-full space-y-12">
             
             <ScrollAnimatedSection className="space-y-6 pt-4 w-full" id="speakers-page-intro-section">
               <span className="inline-block text-[11px] font-mono uppercase text-amber-700 border border-amber-500/20 px-3.5 py-1.5 rounded bg-amber-500/5 tracking-widest font-bold" id="speakers-eyebrow">
@@ -1298,12 +1276,14 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               ))}
             </ScrollAnimatedSection>
 
+            </div>
           </div>
         )}
 
         {/* ==================== UNIFIED EXECUTIVE CONTACT & INQUIRY ==================== */}
         {activePageId === 'contact' && (
-          <div className="flex-1 max-w-7xl mx-auto w-full px-6 lg:px-12 py-28 space-y-12 border-t border-gray-100" id="page-contact-rendered">
+          <div className="flex-1 w-full px-6 py-28 border-t border-gray-100 bg-white" id="page-contact-rendered">
+            <div className="max-w-7xl mx-auto w-full space-y-12">
             
             {/* Top title and description matching the global typography scale */}
             <ScrollAnimatedSection className="space-y-6 pt-4 w-full text-left" id="contact-page-intro-section">
@@ -1595,6 +1575,41 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
                         <span className="text-[9px] text-gray-400 block font-mono italic">Ensure this is a direct private cellular line or secure executive desk line.</span>
                       </div>
 
+                      {/* Proposed/Intended Partnership Amount field - Sponsorship Only */}
+                      {inquiryTab === 'sponsorship' && (
+                        <div className="space-y-2">
+                          <label className="text-[10px] font-mono uppercase text-gray-500 block font-bold tracking-wider">Proposed/Intended Partnership Amount</label>
+                          <div className="relative">
+                            <select 
+                              value={partnershipAmount}
+                              onChange={(e) => setPartnershipAmount(e.target.value)}
+                              className="w-full border border-gray-200 rounded-lg p-4 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white text-gray-800 text-xs font-semibold transition-all shadow-sm cursor-pointer"
+                            >
+                              <option value="25000">$25,000 - Keynote Delegate Partner</option>
+                              <option value="50000">$50,000 - Boardroom Session Partner</option>
+                              <option value="100000">$100,000 - Private Roundtable Co-Host</option>
+                              <option value="250000">$250,000 - Presenting Summit Partner</option>
+                              <option value="custom">Custom Commitment Amount...</option>
+                            </select>
+                          </div>
+                          {partnershipAmount === 'custom' && (
+                            <div className="relative mt-2">
+                              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 font-bold font-mono text-xs">$</span>
+                              <input 
+                                required
+                                type="number"
+                                min="10000"
+                                placeholder="Enter customized amount (min $10,000)..."
+                                value={customAmount}
+                                onChange={(e) => setCustomAmount(e.target.value)}
+                                className="w-full border border-gray-200 rounded-lg p-4 pl-8 focus:outline-none focus:ring-1 focus:ring-gray-400 bg-white text-gray-800 text-xs transition-all shadow-sm"
+                              />
+                            </div>
+                          )}
+                          <span className="text-[9px] text-gray-400 block font-mono italic">State your targeted commitment amount. Minimum partnership entry is $10,000.</span>
+                        </div>
+                      )}
+
                       {/* Message field */}
                       <div className="space-y-2">
                         <label className="text-[10px] font-mono uppercase text-gray-500 block font-bold tracking-wider">Message Details</label>
@@ -1707,6 +1722,7 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               </div>
 
             </ScrollAnimatedSection>
+            </div>
           </div>
         )}
 
@@ -1791,49 +1807,25 @@ export default function InteractiveWireframeView({ activePageId, onNavigate }: I
               )}
 
               {/* Digital Coordinates (Linkedin and Website) */}
-              {(activeSpeaker.linkedin || activeSpeaker.website) && (
-                <div className="grid grid-cols-2 gap-4 pt-2" id="modal-socials-section">
-                  {activeSpeaker.linkedin && (
-                    <a 
-                      href={activeSpeaker.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 border border-gray-200 hover:border-gray-900 rounded-lg p-3 text-xs font-semibold text-gray-700 hover:text-gray-950 transition-colors bg-white"
-                      id="modal-linkedin-link"
-                    >
-                      <Linkedin className="h-4 w-4 text-amber-700" />
-                      <span>LinkedIn Profile</span>
-                    </a>
-                  )}
-                  {activeSpeaker.website && (
-                    <a 
-                      href={activeSpeaker.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-2 border border-gray-200 hover:border-gray-900 rounded-lg p-3 text-xs font-semibold text-gray-700 hover:text-gray-950 transition-colors bg-white"
-                      id="modal-website-link"
-                    >
-                      <Globe className="h-4 w-4 text-amber-700" />
-                      <span>Corporate Portal</span>
-                    </a>
-                  )}
+              {activeSpeaker.linkedin && (
+                <div className="pt-2" id="modal-socials-section">
+                  <a 
+                    href={activeSpeaker.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 border border-gray-200 hover:border-gray-900 rounded-lg p-3 text-xs font-semibold text-gray-700 hover:text-gray-950 transition-colors bg-white w-full shadow-sm"
+                    id="modal-linkedin-link"
+                  >
+                    <Linkedin className="h-4 w-4 text-amber-700" />
+                    <span>LinkedIn Profile</span>
+                  </a>
                 </div>
               )}
 
-              <div className="pt-4 flex gap-3 border-t border-gray-100">
-                <button
-                  onClick={() => {
-                    alert(`Private boardroom booking request for ${activeSpeaker.name} logged securely.`);
-                    setActiveSpeaker(null);
-                  }}
-                  className="w-full bg-gray-950 text-white text-xs font-bold py-3 rounded-md text-center hover:bg-gray-800 transition-colors cursor-pointer tracking-wider uppercase"
-                  id="modal-request-btn"
-                >
-                  Request Appointment Slot
-                </button>
+              <div className="pt-4 flex border-t border-gray-100">
                 <button
                   onClick={() => setActiveSpeaker(null)}
-                  className="w-24 border border-gray-200 text-gray-600 hover:text-gray-900 text-xs font-semibold rounded-md text-center hover:bg-gray-50 transition-colors cursor-pointer"
+                  className="w-full bg-gray-950 hover:bg-gray-800 text-white text-xs font-bold py-3.5 rounded-md text-center transition-colors cursor-pointer uppercase tracking-wider"
                   id="modal-close-btn"
                 >
                   Close
